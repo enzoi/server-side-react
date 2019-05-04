@@ -1439,10 +1439,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("var express = __webpack_require__(/*! express */ \"./node_modules/express/index.js\");\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar renderToString = __webpack_require__(/*! react-dom/server */ \"./node_modules/react-dom/server.js\").renderToString;\n\nvar Home = __webpack_require__(/*! ./client/components/Home */ \"./src/client/components/Home.js\").default;\n\nvar app = express();\napp.get('/', function (req, res) {\n  var content = renderToString(React.createElement(Home, null));\n  res.send(content);\n});\napp.listen(3001, function () {\n  console.log('Listening on port 3001');\n});\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! express */ \"./node_modules/express/index.js\");\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom/server */ \"./node_modules/react-dom/server.js\");\n/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _client_components_Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./client/components/Home */ \"./src/client/components/Home.js\");\n\n\n\n\nvar app = express__WEBPACK_IMPORTED_MODULE_0___default()();\napp.get('/', function (req, res) {\n  var content = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_2__[\"renderToString\"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_client_components_Home__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null));\n  res.send(content);\n});\napp.listen(3001, function () {\n  console.log('Listening on port 3001');\n});\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
