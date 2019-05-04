@@ -1431,7 +1431,7 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar Home = function Home() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, \"I'm the home component\");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./src/client/components/Home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar Home = function Home() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, \"I'm THE home component\");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./src/client/components/Home.js?");
 
 /***/ }),
 
@@ -1442,7 +1442,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var express = __webpack_require__(/*! express */ \"./node_modules/express/index.js\");\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar renderToString = __webpack_require__(/*! react-dom/server */ \"./node_modules/react-dom/server.js\").renderToString;\n\nvar Home = __webpack_require__(/*! ./client/components/Home */ \"./src/client/components/Home.js\").default;\n\nvar app = express();\napp.get('/', function (req, res) {\n  var content = renderToString(React.createElement(Home, null));\n  res.send(content);\n});\napp.listen(3001, function () {\n  console.log('Listening on port 3000');\n});\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("var express = __webpack_require__(/*! express */ \"./node_modules/express/index.js\");\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar renderToString = __webpack_require__(/*! react-dom/server */ \"./node_modules/react-dom/server.js\").renderToString;\n\nvar Home = __webpack_require__(/*! ./client/components/Home */ \"./src/client/components/Home.js\").default;\n\nvar app = express();\napp.get('/', function (req, res) {\n  var content = renderToString(React.createElement(Home, null));\n  res.send(content);\n});\napp.listen(3001, function () {\n  console.log('Listening on port 3001');\n});\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
