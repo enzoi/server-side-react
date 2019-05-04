@@ -1,35 +1,14 @@
 const path = require('path');
+const merge = require('webpack-merge');
+const baseConfig = require('./webpack.base.js');
 
-module.exports = {
+const config = {
 	mode: 'development',
 	entry: './src/client/client.js',
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'public')
-	},
-
-	module: {
-		rules: [
-			{
-				test: /\.js?$/,
-				use: {
-					loader: 'babel-loader',
-					options: {
-						presets: [
-							'@babel/preset-react',
-							[
-								'@babel/preset-env',
-								{
-									targets: {
-										browsers: ['last 2 versions']
-									}
-								}
-							]
-						]
-					}
-				},
-				exclude: /node_modules/
-			}
-		]
 	}
 };
+
+module.exports = merge(baseConfig, config);
